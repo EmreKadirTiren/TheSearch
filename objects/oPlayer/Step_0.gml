@@ -1,11 +1,25 @@
+// ---------------------------------------------------------
+//  BUBBLE SPEEDBOOST TIMER
+// ---------------------------------------------------------
+if (boost_active) {
+    boost_time -= delta_time / 1000000;
+
+    if (boost_time <= 0) {
+        boost_active = false;
+        boost_multiplier = 1;
+    }
+}
+
+
+// ---------------------------------------------------------
+//  INPUT (KEYBOARD + CONTROLLER)
+// ---------------------------------------------------------
 var pad  = 0;
 var dead = 0.2;
 
-// keyboard
 var mx = keyboard_check(vk_right) - keyboard_check(vk_left);
 var my = keyboard_check(vk_down)  - keyboard_check(vk_up);
 
-// controller overrides keyboard if used
 if (gamepad_is_connected(pad)) {
     var gx = gamepad_axis_value(pad, gp_axislh);
     var gy = gamepad_axis_value(pad, gp_axislv);
@@ -14,24 +28,32 @@ if (gamepad_is_connected(pad)) {
     if (abs(gy) > dead) my = gy;
 }
 
-// apply movement
-hsp = (hsp + mx * accel) * drag;
-vsp = (vsp + my * accel) * drag;
 
-hsp = clamp(hsp, -max_speed, max_speed);
-vsp = clamp(vsp, -max_speed, max_speed);
+// ---------------------------------------------------------
+//  MOVEMENT (MET BOOST)
+// ---------------------------------------------------------
+hsp = (hsp + mx * accel * boost_multiplier) * drag;
+vsp = (vsp + my * accel * boost_multiplier) * drag;
 
-// --- MOVE X (with wall collision) ---
+hsp = clamp(hsp, -max_speed * boost_multiplier, max_speed * boost_multiplier);
+vsp = clamp(vsp, -max_speed * boost_multiplier, max_speed * boost_multiplier);
+
+
+// ---------------------------------------------------------
+//  COLLISION X
+// ---------------------------------------------------------
 x += hsp;
 if (place_meeting(x, y, oWall)) {
-    // duw terug tot je net niet meer in de muur zit
     while (place_meeting(x, y, oWall)) {
         x -= sign(hsp);
     }
     hsp = 0;
 }
 
-// --- MOVE Y (with wall collision) ---
+
+// ---------------------------------------------------------
+//  COLLISION Y
+// ---------------------------------------------------------
 y += vsp;
 if (place_meeting(x, y, oWall)) {
     while (place_meeting(x, y, oWall)) {
@@ -40,46 +62,48 @@ if (place_meeting(x, y, oWall)) {
     vsp = 0;
 }
 
-// flip sprite
+
+// ---------------------------------------------------------
+//  SPRITE FLIP
+// ---------------------------------------------------------
 if (hsp > 0) image_xscale = 1;
 else if (hsp < 0) image_xscale = -1;
 
-// player cant get out of border
-var margin = 48;
 
+// ---------------------------------------------------------
+//  ROOM BORDERS
+// ---------------------------------------------------------
 var left   = 48;
 var top    = -12;
 var right  = 1376;
 var bottom = 775;
 
-// als je origin linksboven is:
 x = clamp(x, left,  right  - sprite_width);
 y = clamp(y, top,   bottom - sprite_height);
 
-// Beweegt de speler?
+
+// ---------------------------------------------------------
+//  IDLE BOUNCE + SWISH
+// ---------------------------------------------------------
 var moving = (abs(hsp) > 0.1) || (abs(vsp) > 0.1);
 
-// Idle timer
 if (!moving) {
-    idle_time += delta_time / 1000000; // seconden
+    idle_time += delta_time / 1000000;
 } else {
     idle_time = 0;
     is_bouncing = false;
 }
 
-// Start bounce na 2 seconden stilstand
 if (idle_time > 2) {
     is_bouncing = true;
 }
 
-// Bounce + swish
 if (is_bouncing) {
-    // Grote op-en-neer bounce (5 px)
-    bounce_y = sin(current_time / 200) * 5;
-
-    // Zijwaartse swish (2 px)
-    bounce_x = sin(current_time / 300) * 2;
+    bounce_y = sin(current_time / 200) * 5;  // grote bounce
+    bounce_x = sin(current_time / 300) * 2;  // swish
 } else {
     bounce_y = 0;
     bounce_x = 0;
 }
+
+

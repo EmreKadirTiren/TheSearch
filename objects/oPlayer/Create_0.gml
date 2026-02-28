@@ -14,3 +14,7 @@ is_bouncing = false;
 // offsets voor beweging
 bounce_y = 0;
 bounce_x = 0;
+
+boost_time = 0;
+boost_active = false;
+boost_multiplier = 1;
