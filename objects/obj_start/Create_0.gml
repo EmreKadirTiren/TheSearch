@@ -1,0 +1,1 @@
+global.last_level_room = Room1;

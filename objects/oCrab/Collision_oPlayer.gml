@@ -1,1 +1,1 @@
-room_restart(); // if collide with oPlayer, room restart
+room_goto(Death); // if collide with oPlayer, go to death room
