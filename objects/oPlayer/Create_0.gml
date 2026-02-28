@@ -7,3 +7,10 @@ max_speed = 4;
 
 pad = 0; //uses first controller
 dead = 0.2; //deadzone
+
+idle_time = 0;
+is_bouncing = false;
+
+// offsets voor beweging
+bounce_y = 0;
+bounce_x = 0;

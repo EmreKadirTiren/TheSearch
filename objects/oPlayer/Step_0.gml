@@ -55,3 +55,31 @@ var bottom = 775;
 // als je origin linksboven is:
 x = clamp(x, left,  right  - sprite_width);
 y = clamp(y, top,   bottom - sprite_height);
+
+// Beweegt de speler?
+var moving = (abs(hsp) > 0.1) || (abs(vsp) > 0.1);
+
+// Idle timer
+if (!moving) {
+    idle_time += delta_time / 1000000; // seconden
+} else {
+    idle_time = 0;
+    is_bouncing = false;
+}
+
+// Start bounce na 2 seconden stilstand
+if (idle_time > 2) {
+    is_bouncing = true;
+}
+
+// Bounce + swish
+if (is_bouncing) {
+    // Grote op-en-neer bounce (5 px)
+    bounce_y = sin(current_time / 200) * 5;
+
+    // Zijwaartse swish (2 px)
+    bounce_x = sin(current_time / 300) * 2;
+} else {
+    bounce_y = 0;
+    bounce_x = 0;
+}
