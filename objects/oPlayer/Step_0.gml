@@ -21,22 +21,36 @@ vsp = (vsp + my * accel) * drag;
 hsp = clamp(hsp, -max_speed, max_speed);
 vsp = clamp(vsp, -max_speed, max_speed);
 
+// --- MOVE X (with wall collision) ---
 x += hsp;
+if (place_meeting(x, y, oWall)) {
+    // duw terug tot je net niet meer in de muur zit
+    while (place_meeting(x, y, oWall)) {
+        x -= sign(hsp);
+    }
+    hsp = 0;
+}
+
+// --- MOVE Y (with wall collision) ---
 y += vsp;
+if (place_meeting(x, y, oWall)) {
+    while (place_meeting(x, y, oWall)) {
+        y -= sign(vsp);
+    }
+    vsp = 0;
+}
 
 // flip sprite
 if (hsp > 0) image_xscale = 1;
 else if (hsp < 0) image_xscale = -1;
 
-
 // player cant get out of border
-
-var margin = 48; // pas aan: 8/16/24/32... wat jouw border dikte/offset is
+var margin = 48;
 
 var left   = 48;
 var top    = -12;
-var right  = 1376 ; // of room_width  - margin
-var bottom = 775; // of room_height - margin
+var right  = 1376;
+var bottom = 775;
 
 // als je origin linksboven is:
 x = clamp(x, left,  right  - sprite_width);
