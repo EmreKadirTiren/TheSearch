@@ -55,3 +55,26 @@ var bottom = 775;
 // als je origin linksboven is:
 x = clamp(x, left,  right  - sprite_width);
 y = clamp(y, top,   bottom - sprite_height);
+
+// Beweegt de speler?
+var moving = (abs(hsp) > 0.1) || (abs(vsp) > 0.1);
+
+// Idle timer
+if (!moving) {
+    idle_time += delta_time / 1000000; // seconden
+} else {
+    idle_time = 0;
+    is_bouncing = false;
+}
+
+// Start bounce na 2 seconden
+if (idle_time > 2) {
+    is_bouncing = true;
+}
+
+// Subtiele bounce (1–2 pixels)
+if (is_bouncing) {
+    bounce_offset = sin(current_time / 200) * 5;
+} else {
+    bounce_offset = 0;
+}

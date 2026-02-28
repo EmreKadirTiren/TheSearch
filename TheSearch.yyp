@@ -23,6 +23,8 @@
   },
   "name":"TheSearch",
   "resources":[
+    {"id":{"name":"obj_bubble_boost","path":"objects/obj_bubble_boost/obj_bubble_boost.yy",},},
+    {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"oCrab","path":"objects/oCrab/oCrab.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},},
@@ -33,6 +35,8 @@
     {"id":{"name":"sObsolete","path":"sprites/sObsolete/sObsolete.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sWall","path":"sprites/sWall/sWall.yy",},},
+    {"id":{"name":"spr_bubble_boost","path":"sprites/spr_bubble_boost/spr_bubble_boost.yy",},},
+    {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
