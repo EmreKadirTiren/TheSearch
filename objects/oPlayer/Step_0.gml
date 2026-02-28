@@ -21,3 +21,11 @@ if (spd > max_speed) {
 x += hsp;
 y += vsp;
 
+// Flip sprite based on horizontal speed
+if (hsp > 0) {
+    image_xscale = 1;   // facing right
+}
+else if (hsp < 0) {
+    image_xscale = -1;  // facing left
+}
+
