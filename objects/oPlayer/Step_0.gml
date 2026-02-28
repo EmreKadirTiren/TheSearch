@@ -28,3 +28,16 @@ y += vsp;
 if (hsp > 0) image_xscale = 1;
 else if (hsp < 0) image_xscale = -1;
 
+
+// player cant get out of border
+
+var margin = 48; // pas aan: 8/16/24/32... wat jouw border dikte/offset is
+
+var left   = 48;
+var top    = -12;
+var right  = 1376 ; // of room_width  - margin
+var bottom = 775; // of room_height - margin
+
+// als je origin linksboven is:
+x = clamp(x, left,  right  - sprite_width);
+y = clamp(y, top,   bottom - sprite_height);
