@@ -1,0 +1,1 @@
+room_restart(); // if collide with oPlayer, room restart
