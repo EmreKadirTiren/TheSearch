@@ -1,1 +1,1 @@
-room_goto(Room1); // go to room1
+room_goto(global.last_level_room); // go to room1

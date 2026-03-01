@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Room2","folderPath":"folders/Objects/Room2.yy","name":"Room2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Room1","folderPath":"folders/Objects/Room1.yy","name":"Room1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -27,6 +28,8 @@
     {"id":{"name":"obj_bubble_boost","path":"objects/obj_bubble_boost/obj_bubble_boost.yy",},},
     {"id":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},},
     {"id":{"name":"oCrab","path":"objects/oCrab/oCrab.yy",},},
+    {"id":{"name":"oCrab1","path":"objects/oCrab1/oCrab1.yy",},},
+    {"id":{"name":"oCrab2","path":"objects/oCrab2/oCrab2.yy",},},
     {"id":{"name":"oDialogue","path":"objects/oDialogue/oDialogue.yy",},},
     {"id":{"name":"oExitbtn","path":"objects/oExitbtn/oExitbtn.yy",},},
     {"id":{"name":"oFinish","path":"objects/oFinish/oFinish.yy",},},
@@ -66,11 +69,11 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Start","path":"rooms/Start/Start.yy",},},
     {"roomId":{"name":"Dialogue1","path":"rooms/Dialogue1/Dialogue1.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"Death","path":"rooms/Death/Death.yy",},},
-    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

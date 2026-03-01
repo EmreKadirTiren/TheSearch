@@ -1,0 +1,1 @@
+room_goto(Death); // if collide with oPlayer, go to death room
