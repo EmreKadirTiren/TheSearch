@@ -94,10 +94,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Start","path":"rooms/Start/Start.yy",},},
     {"roomId":{"name":"Dialogue3_1","path":"rooms/Dialogue3_1/Dialogue3_1.yy",},},
     {"roomId":{"name":"Dialogue3","path":"rooms/Dialogue3/Dialogue3.yy",},},
-    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Dialogue2","path":"rooms/Dialogue2/Dialogue2.yy",},},
     {"roomId":{"name":"Dialogue1","path":"rooms/Dialogue1/Dialogue1.yy",},},
