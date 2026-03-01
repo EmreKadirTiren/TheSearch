@@ -43,7 +43,7 @@ if (state == "fight") {
 // DEAD STATE
 // -------------------------
 if (state == "dead") {
-    room_goto()(); // of animatie, of room_goto()
+    room_goto(Dialogue3_1); // of animatie, of room_goto()
 }
 if (hp <= 0) {
     state = "dead";
