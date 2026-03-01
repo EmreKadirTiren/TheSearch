@@ -11,8 +11,8 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Room2","folderPath":"folders/Objects/Room2.yy","name":"Room2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Room1","folderPath":"folders/Objects/Room1.yy","name":"Room1","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Room2","folderPath":"folders/Objects/Room2.yy","name":"Room2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
@@ -25,6 +25,7 @@
   },
   "name":"TheSearch",
   "resources":[
+    {"id":{"name":"Nickroom2","path":"objects/Nickroom2/Nickroom2.yy",},},
     {"id":{"name":"obj_bubble_boost","path":"objects/obj_bubble_boost/obj_bubble_boost.yy",},},
     {"id":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},},
     {"id":{"name":"oCrab","path":"objects/oCrab/oCrab.yy",},},
