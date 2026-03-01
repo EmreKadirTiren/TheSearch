@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Room3","folderPath":"folders/Objects/Room3.yy","name":"Room3","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Room1","folderPath":"folders/Objects/Room1.yy","name":"Room1","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Room2","folderPath":"folders/Objects/Room2.yy","name":"Room2","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -35,6 +36,7 @@
     {"id":{"name":"oDialogue2_1","path":"objects/oDialogue2_1/oDialogue2_1.yy",},},
     {"id":{"name":"oDialogue2","path":"objects/oDialogue2/oDialogue2.yy",},},
     {"id":{"name":"oExitbtn","path":"objects/oExitbtn/oExitbtn.yy",},},
+    {"id":{"name":"oFerran","path":"objects/oFerran/oFerran.yy",},},
     {"id":{"name":"oFinish","path":"objects/oFinish/oFinish.yy",},},
     {"id":{"name":"oLuukvis","path":"objects/oLuukvis/oLuukvis.yy",},},
     {"id":{"name":"oNickCutscene","path":"objects/oNickCutscene/oNickCutscene.yy",},},
@@ -60,6 +62,7 @@
     {"id":{"name":"Schermafbeelding_2026_03_01_144742","path":"sprites/Schermafbeelding_2026_03_01_144742/Schermafbeelding_2026_03_01_144742.yy",},},
     {"id":{"name":"sCrab1","path":"sprites/sCrab1/sCrab1.yy",},},
     {"id":{"name":"sFallenSHip","path":"sprites/sFallenSHip/sFallenSHip.yy",},},
+    {"id":{"name":"sFerran","path":"sprites/sFerran/sFerran.yy",},},
     {"id":{"name":"sFinish","path":"sprites/sFinish/sFinish.yy",},},
     {"id":{"name":"sLuukvis","path":"sprites/sLuukvis/sLuukvis.yy",},},
     {"id":{"name":"sObsolete","path":"sprites/sObsolete/sObsolete.yy",},},
