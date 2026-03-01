@@ -1,18 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oFerran",
+  "%Name":"oFerranProjectile",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oFerran",
+  "name":"oFerranProjectile",
   "overriddenProperties":[],
   "parent":{
-    "name":"Room3",
-    "path":"folders/Objects/Room3.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sFerran",
-    "path":"sprites/sFerran/sFerran.yy",
+    "name":"sCrab1",
+    "path":"sprites/sCrab1/sCrab1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

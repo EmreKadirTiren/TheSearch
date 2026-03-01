@@ -18,3 +18,5 @@ bounce_x = 0;
 boost_time = 0;
 boost_active = false;
 boost_multiplier = 1;
+
+hp = 10;

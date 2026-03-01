@@ -90,4 +90,10 @@ if (is_bouncing) {
     bounce_x = 0;
 }
 
+// Schieten met SPACE
+if (keyboard_check_pressed(vk_space)) {
+    var b = instance_create_layer(x, y, "Instances", oBullet);
+    b.image_angle = image_angle;
+}
+
 
