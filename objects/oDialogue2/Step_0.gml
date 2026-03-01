@@ -22,7 +22,7 @@ if (keyboard_check_pressed(vk_anykey)) {
             shown = "";
             line_done = false;
         } else { //go to next room
-            room_goto(Room3);
+            room_goto(Dialogue3);
         }
     }
 }
