@@ -10,8 +10,8 @@
   "name":"oDialogue",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Room1",
+    "path":"folders/Objects/Room1.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Nickroom2",
+  "%Name":"oDialogue2",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Nickroom2",
+  "name":"oDialogue2",
   "overriddenProperties":[],
   "parent":{
     "name":"Room2",
@@ -30,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"cw_free_mermaid_idle_00004_",
-    "path":"sprites/cw_free_mermaid_idle_00004_/cw_free_mermaid_idle_00004_.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

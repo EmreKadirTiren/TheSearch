@@ -6,8 +6,8 @@
   "name":"oLuukvis",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Room2",
+    "path":"folders/Objects/Room2.yy",
   },
   "parentObjectId":null,
   "persistent":false,
