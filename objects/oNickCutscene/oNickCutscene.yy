@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"oStartbtn",
+  "%Name":"oNickCutscene",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oStartbtn",
+  "name":"oNickCutscene",
   "overriddenProperties":[],
   "parent":{
     "name":"Room1",
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite_0005",
-    "path":"sprites/Sprite_0005/Sprite_0005.yy",
+    "name":"cw_free_mermaid_idle_00004_",
+    "path":"sprites/cw_free_mermaid_idle_00004_/cw_free_mermaid_idle_00004_.yy",
   },
   "spriteMaskId":null,
   "visible":true,
