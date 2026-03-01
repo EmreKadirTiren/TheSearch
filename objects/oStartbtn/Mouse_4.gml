@@ -1,1 +1,1 @@
-room_goto(global.last_level_room); // when start is pressed go to last played room
+room_goto(Dialogue1);
