@@ -1,6 +1,4 @@
-// ---------------------------------------------------------
-//  BUBBLE SPEEDBOOST TIMER
-// ---------------------------------------------------------
+//Set booster time
 if (boost_active) {
     boost_time -= delta_time / 1000000;
 
@@ -11,15 +9,13 @@ if (boost_active) {
 }
 
 
-// ---------------------------------------------------------
-//  INPUT (KEYBOARD + CONTROLLER)
-// ---------------------------------------------------------
 var pad  = 0;
 var dead = 0.2;
 
 var mx = keyboard_check(vk_right) - keyboard_check(vk_left);
 var my = keyboard_check(vk_down)  - keyboard_check(vk_up);
 
+//checks gamemap
 if (gamepad_is_connected(pad)) {
     var gx = gamepad_axis_value(pad, gp_axislh);
     var gy = gamepad_axis_value(pad, gp_axislv);
@@ -29,9 +25,7 @@ if (gamepad_is_connected(pad)) {
 }
 
 
-// ---------------------------------------------------------
-//  MOVEMENT (MET BOOST)
-// ---------------------------------------------------------
+// movemenent when boosts
 hsp = (hsp + mx * accel * boost_multiplier) * drag;
 vsp = (vsp + my * accel * boost_multiplier) * drag;
 
@@ -39,9 +33,7 @@ hsp = clamp(hsp, -max_speed * boost_multiplier, max_speed * boost_multiplier);
 vsp = clamp(vsp, -max_speed * boost_multiplier, max_speed * boost_multiplier);
 
 
-// ---------------------------------------------------------
-//  COLLISION X
-// ---------------------------------------------------------
+//sets collision with object wall on x
 x += hsp;
 if (place_meeting(x, y, oWall)) {
     while (place_meeting(x, y, oWall)) {
@@ -50,10 +42,7 @@ if (place_meeting(x, y, oWall)) {
     hsp = 0;
 }
 
-
-// ---------------------------------------------------------
-//  COLLISION Y
-// ---------------------------------------------------------
+//sets collision with object wall on x
 y += vsp;
 if (place_meeting(x, y, oWall)) {
     while (place_meeting(x, y, oWall)) {
@@ -63,16 +52,12 @@ if (place_meeting(x, y, oWall)) {
 }
 
 
-// ---------------------------------------------------------
-//  SPRITE FLIP
-// ---------------------------------------------------------
+//flip oPlayer 
 if (hsp > 0) image_xscale = 1;
 else if (hsp < 0) image_xscale = -1;
 
 
-// ---------------------------------------------------------
-//  ROOM BORDERS
-// ---------------------------------------------------------
+//set room borders
 var left   = 48;
 var top    = -12;
 var right  = 1376;
@@ -82,11 +67,10 @@ x = clamp(x, left,  right  - sprite_width);
 y = clamp(y, top,   bottom - sprite_height);
 
 
-// ---------------------------------------------------------
-//  IDLE BOUNCE + SWISH
-// ---------------------------------------------------------
+//set var moving
 var moving = (abs(hsp) > 0.1) || (abs(vsp) > 0.1);
 
+//if not move after certain time swish
 if (!moving) {
     idle_time += delta_time / 1000000;
 } else {

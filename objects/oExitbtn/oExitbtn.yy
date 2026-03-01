@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Object8",
+  "%Name":"oExitbtn",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Object8",
+  "name":"oExitbtn",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite_0305",
-    "path":"sprites/Sprite_0305/Sprite_0305.yy",
+    "name":"Sprite_0105",
+    "path":"sprites/Sprite_0105/Sprite_0105.yy",
   },
   "spriteMaskId":null,
   "visible":true,
