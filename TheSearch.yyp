@@ -39,6 +39,7 @@
     {"id":{"name":"sBackground","path":"sprites/sBackground/sBackground.yy",},},
     {"id":{"name":"sCrab1","path":"sprites/sCrab1/sCrab1.yy",},},
     {"id":{"name":"sFallenSHip","path":"sprites/sFallenSHip/sFallenSHip.yy",},},
+    {"id":{"name":"sFinish","path":"sprites/sFinish/sFinish.yy",},},
     {"id":{"name":"sObsolete","path":"sprites/sObsolete/sObsolete.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"spr_bubble_boost","path":"sprites/spr_bubble_boost/spr_bubble_boost.yy",},},
