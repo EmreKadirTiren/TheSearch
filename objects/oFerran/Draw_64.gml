@@ -1,9 +1,3 @@
-// Dialoog tonen
-if (show_dialogue) {
-    draw_set_color(c_white);
-    draw_text(32, 32, dialogue_text);
-}
-
 // Boss HP-bar alleen tijdens gevecht
 if (state == "fight") {
 

@@ -1,28 +1,13 @@
+if (!instance_exists(oPlayer)) exit;
+
 var d = point_distance(x, y, oPlayer.x, oPlayer.y);
 
-// -------------------------
-// IDLE STATE (wachten op E)
-// -------------------------
-if (state == "idle") {
-    if (d < talk_range && keyboard_check_pressed(ord("E"))) {
-
-        // Dialoog tonen
-        dialogue_text = "Je durft mij uit te dagen? Dan zal ik je kracht testen!";
-        show_dialogue = true;
-
-        // Start gevecht
-        state = "fight";
-    }
-}
 
 // -------------------------
 // FIGHT STATE (boss valt aan)
 // -------------------------
 if (state == "fight") {
 
-    // Boss kijkt naar speler
-    if (oPlayer.x < x) image_xscale = -1;
-    else image_xscale = 1;
 
     // Timer voor aanvallen
     attack_timer += 1;

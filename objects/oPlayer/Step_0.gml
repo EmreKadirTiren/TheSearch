@@ -96,4 +96,4 @@ if (keyboard_check_pressed(vk_space)) {
     b.image_angle = image_angle;
 }
 
-
+if hp == 0 then room_goto(Death)
