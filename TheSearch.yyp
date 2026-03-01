@@ -27,6 +27,7 @@
     {"id":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},},
     {"id":{"name":"oCrab","path":"objects/oCrab/oCrab.yy",},},
     {"id":{"name":"oExitbtn","path":"objects/oExitbtn/oExitbtn.yy",},},
+    {"id":{"name":"oFinish","path":"objects/oFinish/oFinish.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oRestartbtn","path":"objects/oRestartbtn/oRestartbtn.yy",},},
     {"id":{"name":"oResumebtn","path":"objects/oResumebtn/oResumebtn.yy",},},
