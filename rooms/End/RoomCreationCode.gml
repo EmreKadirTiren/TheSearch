@@ -1,1 +1,0 @@
-global.last_level_room=Start;

@@ -64,6 +64,8 @@
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"id":{"name":"Start","path":"rooms/Start/Start.yy",},},
+    {"id":{"name":"boss_music","path":"sounds/boss_music/boss_music.yy",},},
+    {"id":{"name":"muziekdoosje","path":"sounds/muziekdoosje/muziekdoosje.yy",},},
     {"id":{"name":"onderwatermuziek","path":"sounds/onderwatermuziek/onderwatermuziek.yy",},},
     {"id":{"name":"_1","path":"sprites/_1/_1.yy",},},
     {"id":{"name":"_116","path":"sprites/_116/_116.yy",},},
@@ -95,7 +97,6 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Start","path":"rooms/Start/Start.yy",},},
-    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
     {"roomId":{"name":"Dialogue3_1","path":"rooms/Dialogue3_1/Dialogue3_1.yy",},},
     {"roomId":{"name":"Dialogue3","path":"rooms/Dialogue3/Dialogue3.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
@@ -105,6 +106,7 @@
     {"roomId":{"name":"Death","path":"rooms/Death/Death.yy",},},
     {"roomId":{"name":"Dialogue2_2","path":"rooms/Dialogue2_2/Dialogue2_2.yy",},},
     {"roomId":{"name":"End","path":"rooms/End/End.yy",},},
+    {"roomId":{"name":"Room3","path":"rooms/Room3/Room3.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
